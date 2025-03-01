@@ -10,5 +10,5 @@ RUN echo deb https://pkg.jenkins.io/debian binary/ > /etc/apt/sources.list.d/jen
 
 RUN apt update -y && apt install -y jenkins
 
-#
+##
 CMD ["java", "-DJENKINS_HOME=/var/lib/jenkins", "-jar", "/usr/share/jenkins/jenkins.war"]
